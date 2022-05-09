@@ -1,0 +1,23 @@
+
+
+
+[
+    { "id":1,
+        "name":"KFC",
+        "city":"Kanpur"
+    },
+    { "id":2,
+        "name":"Taj",
+        "city":"Mumbai"
+    },
+    {
+        "id":3,
+        "name":"Taj Mahal",
+        "city":"Agra"
+    },
+    {
+        "id":4,
+        "name":"Motera Stadium", 
+        "city":"Ahmedabad"
+    }
+]
