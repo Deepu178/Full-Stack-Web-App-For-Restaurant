@@ -100,6 +100,6 @@ app.use('/pay', paymentRoutes)
 
 
 //listen
-app.listen(PORT,()=>{
+app.listen(process.env.PORT || 7575,()=>{
     log('This app is running on port: ${PORT}')
 })
