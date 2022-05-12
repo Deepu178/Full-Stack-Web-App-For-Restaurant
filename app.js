@@ -99,6 +99,12 @@ app.use('/menu/',menuRoutes)
 app.use('/pay', paymentRoutes)
 
 
+//heroku configurations
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static("zomato/build"))
+}
+
+
 //listen
 app.listen(PORT,()=>{
     log('This app is running on port: ${PORT}')
