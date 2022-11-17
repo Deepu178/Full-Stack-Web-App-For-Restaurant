@@ -1,3 +1,63 @@
+// const express=require('express')
+// const bodyParser=require('body-parser')
+// const restaurantRoutes=require('./routes/restaurant')
+// //create server
+// var app= express()
+
+
+// //constants
+// const PORT = 6767
+// const log=console.log
+
+// //add middleware
+
+// app.use(bodyParser.json())
+// app.use('/restaurant',restaurantRoutes )
+
+
+// app.listen(PORT,()=>{
+//     log('this app is running on port: ${PORT}')
+// })
+
+
+// //import 
+// // const express=require('express')
+// // const restaurantRoutes =require('./routes/restaurant')
+// // //create server
+// // const app = express()
+
+// // //constant
+// // const PORT = 7575
+// // const log=console.log
+
+// // //add middleware 
+// // app.use('/restaurant', restaurantRoutes)
+
+
+// // //listen
+// // app.listen(PORT, ()=>{
+// //     log('This app is running on port: ${PORT}')
+// // })
+
+// // // import
+// // const express=require('express')
+// // const restaurantRoutes=require('./routes/restaurant')
+
+// // //create server
+// // const app=express()
+
+// // //create constants
+// // const PORT = 7373
+// // const log=console.log
+
+
+// // //add middleware
+// // app.use('/restaurant', restaurantRoutes )
+
+// // //listen
+// // app.listen(PORT, ()=>{
+// //     log('this app is runnig on port: ${PORT}')
+// // })
 
 
 
@@ -16,7 +76,7 @@ const app=express()
 
 
 //create constant
-const PORT=7575
+const PORT=process.env.PORT || 7575
 const log=console.log
 
 
