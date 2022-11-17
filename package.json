@@ -1,7 +1,6 @@
 {
-  "name": "node-express-routes-bps",
+  "name": "express-routes-bps",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +17,15 @@
     "mongoose": "^6.2.4",
     "razorpay": "^2.8.1",
     "shortid": "^2.2.16"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deepu178/Full-Stack-Web-App-For-Restaurant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Deepu178/Full-Stack-Web-App-For-Restaurant/issues"
+  },
+  "homepage": "https://github.com/Deepu178/Full-Stack-Web-App-For-Restaurant#readme",
+  "description": ""
 }
