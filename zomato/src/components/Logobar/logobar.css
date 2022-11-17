@@ -1,0 +1,173 @@
+/* adding LogoBar.css */
+  .header{
+     background-color: rgb(249, 5, 5);
+     height: 80px; 
+     width: 100%;
+     padding: 15px 101px 13px 102px;
+    }
+
+   .logo{
+    color: red;
+    height: 47px; 
+    width: 32px;
+    font-family: poppins; 
+    font-size: 33px; 
+    font-weight: 600; 
+    font-stretch: normal; 
+    font-style: normal;
+    line-height: 1.52; 
+    letter-spacing:normal; 
+    text-align: left;
+    z-index: 3;
+    position: relative;
+    left: 15px;
+      }
+
+  .login
+  {
+    position: relative;
+    left: 1000px;
+    background-color: white;
+    width: 80px; 
+    height: 40px; 
+    margin: 12px 26px 11px 0;
+    font-family: poppins; 
+    font-size: 20px; 
+    font-weight: 500; 
+    font-stretch: normal; 
+    font-style: normal; 
+    line-height: 1.56; 
+    letter-spacing: normal; 
+    text-align: left;
+    color:red;
+    border-color: white;
+    bottom: 60px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 15px;
+      }
+      
+      
+  
+  .create
+  {
+    background-color: white;
+    color: red; 
+    border: none;
+    border-color: white;
+    position: relative;
+    left: 1020px;
+    bottom: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    height: 40px;
+     
+    }
+  
+    .logo-background{
+    background-color: white;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    z-index: 2;
+    }
+  
+    .create .login:hover{
+      background-color: white;
+      color: red;
+      transform: scale(1.1, 1.1);
+    }
+  
+  #login-heading{
+    position: relative;
+    bottom: 20px;
+    margin: 5px;
+  }
+  #create-heading{
+    position: relative;
+    bottom: 15px;
+  }
+
+  .modalCreate{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    z-index: 4;
+    position: absolute;
+    left: 33%;
+    top: 30%;
+   border: 1px solid black;
+   border-radius: 20px;
+  }
+
+  .modalLogin{
+    padding: 30px 60px;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    z-index: 4;
+    position: absolute;
+    left: 33%;
+    top: 30%;
+   border: 1px solid black;
+   border-radius: 20px;
+  }
+  
+  .createForm{
+  margin: 30px;
+  }
+
+ label{
+    margin-bottom: 20px;
+    
+ }
+
+ .createForm input{
+    margin: 0 50px;
+    display: table-cell;
+    border: 1px solid black;
+    height: 40px;
+    width: 200px;
+    vertical-align: middle;
+    
+    
+ }
+ .loginInput{
+  margin: 0 30px;
+  display: table-cell;
+  border: 1px solid black;
+  vertical-align: middle;
+  
+  
+}
+
+ input[type=password]{
+  margin-left: 23px;
+ }
+
+ input::placeholder{
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+ }
+ 
+
+ .form{
+  text-align: center;
+ }
+
+ #create-btn{
+  margin-top: 10px;
+  margin-right: 50px;
+
+ }
+
+ #login-btn{
+  margin-top: 5px;
+  margin-left: 50px;
+
+ }
+
+ #loginForm{
+  margin: 5px;
+ }
