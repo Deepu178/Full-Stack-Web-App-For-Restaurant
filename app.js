@@ -9,7 +9,7 @@
 // const PORT = 6767
 // const log=console.log
 
-// //add middleware
+
 
 // app.use(bodyParser.json())
 // app.use('/restaurant',restaurantRoutes )
