@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74578233.css",
+    "main.js": "/static/js/main.3384fb32.js",
+    "static/js/787.9c166d28.chunk.js": "/static/js/787.9c166d28.chunk.js",
+    "static/media/drinks.png": "/static/media/drinks.bbc501d7658b9d189a99.png",
+    "static/media/food.jpg": "/static/media/food.1177d42fc8ebb86e848a.jpg",
+    "static/media/8484.png": "/static/media/8484.0211253c454728fbc99c.png",
+    "static/media/dinner.png": "/static/media/dinner.0a01684ec976221a0f35.png",
+    "static/media/lunch.jpg": "/static/media/lunch.580d26762d0153794070.jpg",
+    "static/media/nightlife.png": "/static/media/nightlife.7387f117c6293db15a2f.png",
+    "static/media/breakfast.jpg": "/static/media/breakfast.c3fe7e13a9de7b5b2d43.jpg",
+    "static/media/Mask Group 51.png": "/static/media/Mask Group 51.c67e54ac2b64e98786d5.png",
+    "static/media/Mask Group 25.png": "/static/media/Mask Group 25.ea672607c26c5e419a33.png",
+    "static/media/Mask Group 28.png": "/static/media/Mask Group 28.876fc354a0ddb7480425.png",
+    "static/media/snacks.png": "/static/media/snacks.9fc56b6ecbb50deacd0b.png",
+    "static/media/Mask Group 26.png": "/static/media/Mask Group 26.4fb405dcc1a235c3c90c.png",
+    "static/media/1.jpg.png": "/static/media/1.jpg.b3f949b91b5a019b4299.png",
+    "static/media/Mask Group 2.png": "/static/media/Mask Group 2.c5062974278871fd13f5.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88.svg",
+    "index.html": "/index.html",
+    "main.74578233.css.map": "/static/css/main.74578233.css.map",
+    "main.3384fb32.js.map": "/static/js/main.3384fb32.js.map",
+    "787.9c166d28.chunk.js.map": "/static/js/787.9c166d28.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74578233.css",
+    "static/js/main.3384fb32.js"
+  ]
+}

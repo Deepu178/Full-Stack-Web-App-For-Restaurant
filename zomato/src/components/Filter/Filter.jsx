@@ -231,7 +231,7 @@ console.log(filter)
             
         
     <div className="small-item vertical">
-        <img className="img" src={require('../../Assets/snacks.png')}/>
+        <img className="img"  src={require('../../Assets/snacks.png')} alt="Snacks"/>
     </div>
     <div className="big-item">
     <div className="rest-name">{item.name}</div>
@@ -258,9 +258,9 @@ console.log(filter)
     
     <div>
 <div className="pagination">
-    <a href="#"> {'<<'} </a>
+    <a href="#2"> {'<<'} </a>
     {PaginationItems}
-    <a href="#">  {'>>'} </a>
+    <a href="#1">  {'>>'} </a>
     </div>
     </div>
     </div>
