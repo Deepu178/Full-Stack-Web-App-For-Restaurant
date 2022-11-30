@@ -1,65 +1,3 @@
-// const express=require('express')
-// const bodyParser=require('body-parser')
-// const restaurantRoutes=require('./routes/restaurant')
-// //create server
-// var app= express()
-
-
-// //constants
-// const PORT = 6767
-// const log=console.log
-
-
-
-// app.use(bodyParser.json())
-// app.use('/restaurant',restaurantRoutes )
-
-
-// app.listen(PORT,()=>{
-//     log('this app is running on port: ${PORT}')
-// })
-
-
-// //import 
-// // const express=require('express')
-// // const restaurantRoutes =require('./routes/restaurant')
-// // //create server
-// // const app = express()
-
-// // //constant
-// // const PORT = 7575
-// // const log=console.log
-
-// // //add middleware 
-// // app.use('/restaurant', restaurantRoutes)
-
-
-// // //listen
-// // app.listen(PORT, ()=>{
-// //     log('This app is running on port: ${PORT}')
-// // })
-
-// // // import
-// // const express=require('express')
-// // const restaurantRoutes=require('./routes/restaurant')
-
-// // //create server
-// // const app=express()
-
-// // //create constants
-// // const PORT = 7373
-// // const log=console.log
-
-
-// // //add middleware
-// // app.use('/restaurant', restaurantRoutes )
-
-// // //listen
-// // app.listen(PORT, ()=>{
-// //     log('this app is runnig on port: ${PORT}')
-// // })
-
-
 
 const express=require('express')
 const restaurantRoutes=require('./routes/restaurant')
@@ -70,22 +8,26 @@ const mealtypeRoutes=require('./routes/mealtype')
 const menuRoutes=require('./routes/menu')
 const paymentRoutes=require('./routes/pay')
 var cors=require('cors')
+const dotenv = require('dotenv');
+dotenv.config({path:'./config.env'});
 
 //create server
 const app=express()
 
 
 //create constant
-const PORT=process.env.PORT || 7575
+const port=process.env.PORT || 8080
 const log=console.log
 
-
+const DB = process.env.DATABASE
 //connect to mongodb
-const MONGO_URI="mongodb://localhost/zomato";
+//const MONGO_URI="mongodb://localhost/zomato";
 
-mongoose.connect(MONGO_URI,()=>{
-    console.log('MongoDB connected....')
-},e=>console.log('error occured', e))
+mongoose.connect(DB, {
+    useNewUrlParser:true,
+}).then(()=>{
+    log("connection successful")
+}).catch((err)=>log(err))
 
 
 //add middleware
@@ -99,17 +41,17 @@ app.use('/menu/',menuRoutes)
 app.use('/pay', paymentRoutes)
 
 
-//heroku configurations
-if(process.env.NODE_ENV == "production"){
-    app.use(express.static("zomato/build"))
-    const path = require("path")
-    app.get("*", (req, res)=>{
-        res.sendFile(path.resolve(__dirname, "zomato", "build", "index.html"))
-    })
-}
+// //heroku configurations
+// if(process.env.NODE_ENV == "production"){
+//     app.use(express.static("zomato/build"))
+//     const path = require("path")
+//     app.get("*", (req, res)=>{
+//         res.sendFile(path.resolve(__dirname, "zomato", "build", "index.html"))
+//     })
+// }
 
 
 //listen
-app.listen(PORT,()=>{
-    log('This app is running on port: ${PORT}')
+app.listen(port,()=>{
+    log('This app is running on port: ${port}')
 })
