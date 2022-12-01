@@ -40,22 +40,22 @@ export default function Logobar() {
           <fieldset>
             <label>Name: </label>
             <label>
-          <input type={"text"}  placeholder={"Enter your name"}/>
+          <input type={"text"} required  placeholder={"Enter your name"}/>
           </label>
           <br />
           <label>Email: </label>
           <label>
-          <input type={'email'}  placeholder="Enter Your Email"/>
+          <input type={'email'} required  placeholder="Enter Your Email"/>
           </label>
           <br />
           <label>Phone:</label>
           <label>
-          <input type={Number}  placeholder="Phone Number" />
+          <input type={Number} required  placeholder="Phone Number" />
           </label>
           <br/>
           <label>Password:</label>
           <label>
-          <input type={"password"}  placeholder="Create Password"/>
+          <input type={"password"} required  placeholder="Create Password"/>
           </label>
           <br/>
           <button id='create-btn' value={"submit"} type='sumbit' >Create</button>
