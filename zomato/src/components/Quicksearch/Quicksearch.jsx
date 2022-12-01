@@ -11,7 +11,7 @@ export default class QuickSearch extends Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:7575/mealtypes', {method:'GET'})
+    fetch('http://localhost:8000/mealtypes', {method:'GET'})
   .then(response=>response.json())
   .then(data=>this.setState({mealtypes:data.mealtypes}))
 }

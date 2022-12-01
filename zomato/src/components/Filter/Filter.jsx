@@ -45,7 +45,7 @@ export default function Filter() {
    useEffect(() => {
      
     
-    fetch(`http://localhost:7575/restaurant/filter/${currentPageNo}`, requestOptions)
+    fetch(`http://localhost:8000/restaurant/filter/${currentPageNo}`, requestOptions)
         .then(response=>response.json())
         .then(data=>{
         setRestaurantsList(data.restaurantList);
@@ -63,7 +63,7 @@ export default function Filter() {
 
 
   useEffect(()=>{
-    fetch(`http://localhost:7575/location/${locationList}`, requestOptions)
+    fetch(`http://localhost:8000/location/${locationList}`, requestOptions)
     .then(response=>response.json())
     .then(data=>{
         setLocationList(data.locationList);

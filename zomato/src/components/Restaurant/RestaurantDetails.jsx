@@ -19,14 +19,14 @@ export default function RestaurantDetails() {
   const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(()=>{
-    fetch(`http://localhost:7575/restaurant/${rName}`, {method:'GET'})
+    fetch(`http://localhost:8000/restaurant/${rName}`, {method:'GET'})
     .then(response=>response.json())
     .then(data=>{
       setRestaurant(data.restaurantList); })
 
   }, []) 
   const fetchMenu=()=>{
-    fetch(`http://localhost:7575/menu/${rName}`, {method:'GET'})
+    fetch(`http://localhost:8000/menu/${rName}`, {method:'GET'})
     .then(response=>response.json())
     .then(data=>{
       setMenu(data.menu); console.log(menu) })
@@ -56,7 +56,7 @@ export default function RestaurantDetails() {
   
   const openRazorpay = async()=>{
   let data;
-   data= await fetch('http://localhost:7575/pay',{
+   data= await fetch('http://localhost:8000/pay',{
 
     method:'POST',
     headers:{"content-Type":'application/json'},
@@ -77,7 +77,7 @@ export default function RestaurantDetails() {
         transactionid:response.razorpay_payment_id,
         transactionamount:data.amount
       }
-      fetch('http://localhost:7575/pay/save',{
+      fetch('http://localhost:8000/pay/save',{
         method:'POST',
         headers:{'content-Type':'application/json'},
         body:JSON.stringify(values)

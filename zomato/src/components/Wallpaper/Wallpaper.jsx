@@ -18,7 +18,7 @@ export default class Wallpaper extends Component {
 
   componentDidMount(){
     //call api
-    fetch(`http://localhost:7575/location/`, {method:'GET'})
+    fetch(`http://localhost:8000/location/`, {method:'GET'})
     .then(response=>response.json())
     .then(data=>this.setState({locations:data.locationList}))
   }
@@ -26,7 +26,7 @@ export default class Wallpaper extends Component {
   fetchRestaurants=(event)=>{
 
     console.log(event.target.value)
-    fetch(`http://localhost:7575/restaurant/filter/${event.target.value}`, {method:'GET'})
+    fetch(`http://localhost:8000/restaurant/filter/${event.target.value}`, {method:'GET'})
     .then(response=>response.json())
     .then(data=>this.setState({restaurants:data.restaurantList}))
   }
