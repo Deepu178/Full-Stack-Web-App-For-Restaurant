@@ -36,9 +36,9 @@ export default function Filter() {
     })
 
     const requestOptions={
-        method:'POST', 
+        method:'get', 
         headers:{'Content-Type':'application/json'},
-        body:JSON.stringify(filter)
+        //body:JSON.stringify(filter)
 
     }
 
