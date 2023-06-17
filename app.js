@@ -3,6 +3,7 @@ const express=require('express')
 const restaurantRoutes=require('./routes/restaurant')
 const bodyParser=require('body-parser')
 const mongoose=require('mongoose')
+// const userRoutes = require('./routes/userLogin');
 const locationRoutes=require('./routes/location')
 const mealtypeRoutes=require('./routes/mealtype')
 const menuRoutes=require('./routes/menu')
@@ -33,6 +34,7 @@ mongoose.connect(DB, {
 //add middleware
 app.use(cors());
 //app.use(bodyParser.json())
+// app.use('/userProfile', userRoutes)
 app.use('/restaurant', restaurantRoutes)
 app.use('/location', locationRoutes)
 app.use('/mealtypes', mealtypeRoutes)
