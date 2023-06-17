@@ -11,9 +11,11 @@ export default class QuickSearch extends Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:8000/mealtypes', {method:'GET'})
-  .then(response=>response.json())
-  .then(data=>this.setState({mealtypes:data.mealtypes}))
+    fetch("https://rest-backend-zyv7.onrender.com/mealtypes", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => this.setState({ mealtypes: data.mealtypes }));
 }
 
   render() {

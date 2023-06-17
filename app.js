@@ -32,7 +32,7 @@ mongoose.connect(DB, {
 
 
 //add middleware
-app.use(cors());
+// app.use(cors());
 //app.use(bodyParser.json())
 // app.use('/userProfile', userRoutes)
 app.use('/restaurant', restaurantRoutes)
